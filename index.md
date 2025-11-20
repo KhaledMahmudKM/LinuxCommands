@@ -20,7 +20,6 @@ Each chapter focuses on a specific area, such as file management, user administr
 10. [User & Group Management](users.md)
 11. [Editors & Viewing Files](editors.md)
 12. [Error and Logs](error_logs.md)
-13. [Conclusion](#conclusion)
 
 Each chapter is designed to provide a quick and practical reference to essential Linux commands.
 
