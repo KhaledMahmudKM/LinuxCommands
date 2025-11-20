@@ -8,7 +8,7 @@ This chapter covers Linux text editors and file viewing commands.
 
 **Usage:**
 
-```
+```bash
 cat file.txt
 cat file1 file2 > combined.txt
 ```
@@ -21,7 +21,7 @@ Displays file contents or combines files.
 
 **Usage:**
 
-```
+```bash
 less file.txt
 ```
 
@@ -38,7 +38,7 @@ Navigation:
 
 **Usage:**
 
-```
+```bash
 more file.txt
 ```
 
@@ -50,7 +50,7 @@ Like `less` but with fewer features.
 
 **Usage:**
 
-```
+```bash
 nano file.txt
 ```
 
@@ -67,7 +67,7 @@ Basic editing with on-screen shortcuts.
 
 **Usage:**
 
-```
+```bash
 vi file.txt
 vim file.txt
 ```
@@ -92,7 +92,7 @@ Common commands:
 
 **Usage:**
 
-```
+```bash
 head file.txt
 head -n 20 file.txt
 ```
@@ -105,7 +105,7 @@ Shows top lines of a file.
 
 **Usage:**
 
-```
+```bash
 tail file.txt
 tail -n 20 file.txt
 tail -f logfile.log
@@ -119,7 +119,7 @@ tail -f logfile.log
 
 **Usage:**
 
-```
+```bash
 tac file.txt
 ```
 
@@ -131,7 +131,7 @@ Displays lines from bottom to top.
 
 **Usage:**
 
-```
+```bash
 od -c file.txt
 od -x file.bin
 ```
@@ -144,7 +144,7 @@ Displays binary or non-printable data.
 
 **Usage:**
 
-```
+```bash
 strings binaryfile
 ```
 

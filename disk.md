@@ -8,7 +8,7 @@ This chapter covers Linux commands for viewing and managing disks, partitions, a
 
 **Usage:**
 
-```
+```bash
 df -h
 ```
 
@@ -23,7 +23,7 @@ Options:
 
 **Usage:**
 
-```
+```bash
 du -sh /path/to/dir
 du -h --max-depth=1 /home
 ```
@@ -40,7 +40,7 @@ Options:
 
 **Usage:**
 
-```
+```bash
 lsblk
 lsblk -f
 ```
@@ -53,7 +53,7 @@ Shows disks, partitions, and mount points. `-f` shows filesystem info.
 
 **Usage:**
 
-```
+```bash
 blkid /dev/sda1
 ```
 
@@ -65,7 +65,7 @@ Shows UUID, type, and label of partitions.
 
 **Usage:**
 
-```
+```bash
 mount /dev/sda1 /mnt
 mount -t ext4 /dev/sdb1 /data
 ```
@@ -78,7 +78,7 @@ Mount a device to a directory.
 
 **Usage:**
 
-```
+```bash
 umount /mnt
 ```
 
@@ -90,7 +90,7 @@ Unmount a mounted filesystem.
 
 **Usage:**
 
-```
+```bash
 fsck /dev/sda1
 ```
 
@@ -102,7 +102,7 @@ Checks filesystem consistency and repairs errors.
 
 **Usage:**
 
-```
+```bash
 mkfs.ext4 /dev/sdb1
 mkfs.xfs /dev/sdb2
 ```
@@ -115,7 +115,7 @@ Creates a new filesystem on a partition.
 
 **Usage:**
 
-```
+```bash
 parted /dev/sda
 (parted) print
 (parted) mkpart primary ext4 1MiB 100%
@@ -129,7 +129,7 @@ Interactive partitioning tool.
 
 **Usage:**
 
-```
+```bash
 fdisk /dev/sda
 ```
 
@@ -141,7 +141,7 @@ Create, delete, and modify partitions (MBR).
 
 **Usage:**
 
-```
+```bash
 ls -l /dev/disk/by-uuid/
 ```
 
@@ -153,7 +153,7 @@ Shows UUIDs for mounting filesystems in `/etc/fstab`.
 
 **Usage:**
 
-```
+```bash
 tune2fs -l /dev/sda1
 tune2fs -c 30 /dev/sda1  # set max mount count
 ```

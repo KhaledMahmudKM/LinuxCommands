@@ -8,7 +8,7 @@ This chapter covers Linux commands to view system information, hardware details,
 
 **Usage:**
 
-```
+```bash
 uname -a
 uname -r
 uname -m
@@ -26,7 +26,7 @@ Options:
 
 **Usage:**
 
-```
+```bash
 hostnamectl
 hostnamectl set-hostname newname
 ```
@@ -37,7 +37,7 @@ hostnamectl set-hostname newname
 
 **Usage:**
 
-```
+```bash
 uptime
 ```
 
@@ -49,7 +49,7 @@ Shows how long the system has been running, users logged in, load averages.
 
 **Usage:**
 
-```
+```bash
 dmesg | less
 ```
 
@@ -61,7 +61,7 @@ dmesg | less
 
 **Usage:**
 
-```
+```bash
 lscpu
 ```
 
@@ -73,7 +73,7 @@ Shows number of cores, threads, architecture, CPU family, model, cache size.
 
 **Usage:**
 
-```
+```bash
 lsblk
 lsblk -f
 ```
@@ -86,7 +86,7 @@ Shows disks, partitions, mount points, and filesystem types.
 
 **Usage:**
 
-```
+```bash
 lspci
 lspci -v
 ```
@@ -99,7 +99,7 @@ Shows hardware connected via PCI (network cards, GPUs, etc.).
 
 **Usage:**
 
-```
+```bash
 lsusb
 lsusb -v
 ```
@@ -112,7 +112,7 @@ Shows connected USB devices.
 
 **Usage:**
 
-```
+```bash
 free -h
 ```
 
@@ -127,7 +127,7 @@ Options:
 
 **Usage:**
 
-```
+```bash
 vmstat 1
 ```
 
@@ -139,7 +139,7 @@ Shows CPU, memory, I/O, system statistics in real-time.
 
 **Usage:**
 
-```
+```bash
 df -h
 ```
 
@@ -151,7 +151,7 @@ Shows available, used, and total space for mounted filesystems.
 
 **Usage:**
 
-```
+```bash
 du -sh /path/to/dir
 du -h --max-depth=1 /home
 ```
@@ -162,7 +162,7 @@ du -h --max-depth=1 /home
 
 **Usage:**
 
-```
+```bash
 top
 htop
 ```
@@ -175,7 +175,7 @@ Shows CPU, memory, and process usage in real-time.
 
 **Usage:**
 
-```
+```bash
 uptime
 w
 ```

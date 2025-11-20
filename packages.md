@@ -7,7 +7,7 @@ This chapter covers Linux package management commands for installing, updating, 
 ## 1. `apt` — Debian/Ubuntu Package Manager
 
 **Usage:**
-
+bash
 ```
 sudo apt update          # refresh package lists
 sudo apt upgrade         # upgrade installed packages
@@ -22,7 +22,7 @@ sudo apt autoremove      # remove unused dependencies
 
 **Usage:**
 
-```
+```bash
 dpkg -i package.deb      # install .deb file
 dpkg -r pkgname          # remove package
 dpkg -l                  # list installed packages
@@ -36,7 +36,7 @@ dpkg -s pkgname          # package status
 
 **Usage:**
 
-```
+```bash
 sudo yum install pkgname
 sudo yum remove pkgname
 sudo yum update
@@ -50,7 +50,7 @@ sudo yum search keyword
 
 **Usage:**
 
-```
+```bash
 sudo dnf install pkgname
 sudo dnf remove pkgname
 sudo dnf update
@@ -64,7 +64,7 @@ sudo dnf search keyword
 
 **Usage:**
 
-```
+```bash
 rpm -i package.rpm      # install package
 rpm -e pkgname          # remove package
 rpm -qa                 # list installed packages
@@ -77,7 +77,7 @@ rpm -ql pkgname         # list files in a package
 
 **Usage:**
 
-```
+```bash
 sudo snap install pkgname
 sudo snap remove pkgname
 snap list                 # list installed snaps
@@ -90,7 +90,7 @@ snap info pkgname         # show package details
 
 **Usage:**
 
-```
+```bash
 flatpak install flathub pkgname
 flatpak uninstall pkgname
 flatpak list
@@ -103,7 +103,7 @@ flatpak info pkgname
 
 **Usage:**
 
-```
+```bash
 brew install pkgname
 brew uninstall pkgname
 brew update

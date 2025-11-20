@@ -8,7 +8,7 @@ This chapter covers commands for viewing, controlling, and managing processes in
 
 **Usage:**
 
-```
+```bash
 ps
 ps aux
 ps -ef
@@ -23,7 +23,7 @@ Common formats:
 
 Filter by name:
 
-```
+```bash
 ps aux | grep nginx
 ```
 
@@ -33,7 +33,7 @@ ps aux | grep nginx
 
 **Usage:**
 
-```
+```bash
 top
 ```
 
@@ -51,7 +51,7 @@ Navigation:
 
 **Usage:**
 
-```
+```bash
 htop
 ```
 
@@ -64,7 +64,7 @@ htop
 
 **Usage:**
 
-```
+```bash
 pidof sshd
 ```
 
@@ -76,7 +76,7 @@ pidof sshd
 
 **Usage:**
 
-```
+```bash
 pgrep ssh
 pkill ssh
 ```
@@ -92,7 +92,7 @@ pkill ssh
 
 **Usage:**
 
-```
+```bash
 kill 1234
 kill -9 1234
 ```
@@ -110,7 +110,7 @@ Common signals:
 
 **Usage:**
 
-```
+```bash
 killall firefox
 ```
 
@@ -120,7 +120,7 @@ killall firefox
 
 **Usage:**
 
-```
+```bash
 nice -n 10 myscript.sh
 ```
 
@@ -133,7 +133,7 @@ Range: `-20` (highest priority) → `19` (lowest priority)
 
 **Usage:**
 
-```
+```bash
 renice 5 -p 1234
 ```
 
@@ -145,7 +145,7 @@ renice 5 -p 1234
 
 **Usage:**
 
-```
+```bash
 systemctl status nginx
 systemctl start nginx
 systemctl stop nginx
@@ -161,7 +161,7 @@ systemctl disable nginx
 
 **Usage:**
 
-```
+```bash
 service apache2 status
 service ssh restart
 ```
@@ -172,25 +172,25 @@ service ssh restart
 
 ### Background jobs:
 
-```
+```bash
 command &
 ```
 
 View jobs:
 
-```
+```bash
 jobs
 ```
 
 Move job to background:
 
-```
+```bash
 bg %1
 ```
 
 Bring job to foreground:
 
-```
+```bash
 fg %1
 ```
 
@@ -200,7 +200,7 @@ fg %1
 
 **Usage:**
 
-```
+```bash
 nohup myscript.sh &
 ```
 
@@ -214,7 +214,7 @@ Creates `nohup.out` unless redirected.
 
 **Usage:**
 
-```
+```bash
 strace ls
 strace -p 1234
 ```

@@ -8,13 +8,13 @@ This chapter covers Linux file permissions, ownership, and commonly used related
 
 Permissions are shown using:
 
-```
+```bash
 ls -l
 ```
 
 Example output:
 
-```
+```bash
 -rwxr-xr-- 1 user group 4096 Jan 1  example.sh
 ```
 
@@ -37,7 +37,7 @@ Permission meanings:
 
 **Usage:**
 
-```
+```bash
 chmod 755 script.sh
 chmod u+x script.sh
 chmod g-w file.txt
@@ -54,7 +54,7 @@ Two ways to set permissions:
 
 Example:
 
-```
+```bash
 chmod 644 file.txt
 ```
 
@@ -62,7 +62,7 @@ Owner: read/write, Group: read, Others: read
 
 ### Symbolic Mode
 
-```
+```bash
 chmod u+r file
 chmod g-x file
 chmod o-rwx file
@@ -74,7 +74,7 @@ chmod o-rwx file
 
 **Usage:**
 
-```
+```bash
 chown user file
 chown user:group file
 chown -R user:group folder
@@ -88,7 +88,7 @@ chown -R user:group folder
 
 **Usage:**
 
-```
+```bash
 chgrp group file
 chgrp -R group folder
 ```
@@ -101,7 +101,7 @@ chgrp -R group folder
 
 **Usage:**
 
-```
+```bash
 umask
 umask 022
 ```
@@ -126,7 +126,7 @@ Linux supports special modes:
 
 ### 1. Setuid (`s`)
 
-```
+```bash
 chmod u+s file
 ```
 
@@ -134,7 +134,7 @@ File runs with the **owner’s privileges**.
 
 ### 2. Setgid (`s`)
 
-```
+```bash
 chmod g+s directory
 ```
 
@@ -142,7 +142,7 @@ New files inherit directory group.
 
 ### 3. Sticky Bit (`t`)
 
-```
+```bash
 chmod +t /shared/dir
 ```
 
@@ -155,7 +155,7 @@ Common on `/tmp`.
 
 **Usage:**
 
-```
+```bash
 ls -l
 stat file.txt
 ```

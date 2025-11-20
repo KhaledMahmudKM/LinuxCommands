@@ -8,7 +8,7 @@ This chapter covers common Linux commands for working with files and directories
 
 **Usage:**
 
-```
+```bash
 ls
 ls -l
 ls -a
@@ -27,7 +27,7 @@ ls -lh
 
 **Usage:**
 
-```
+```bash
 cd /path/to/dir
 cd ..
 cd ~
@@ -41,7 +41,7 @@ cd ~
 
 **Usage:**
 
-```
+```bash
 pwd
 ```
 
@@ -53,7 +53,7 @@ pwd
 
 **Usage:**
 
-```
+```bash
 mkdir new_folder
 mkdir -p parent/child
 ```
@@ -68,7 +68,7 @@ mkdir -p parent/child
 
 **Usage:**
 
-```
+```bash
 rmdir folder
 ```
 
@@ -80,7 +80,7 @@ rmdir folder
 
 **Usage:**
 
-```
+```bash
 rm file.txt
 rm -r folder
 rm -rf folder
@@ -99,7 +99,7 @@ rm -rf folder
 
 **Usage:**
 
-```
+```bash
 cp source.txt dest.txt
 cp -r source_dir dest_dir
 ```
@@ -114,7 +114,7 @@ cp -r source_dir dest_dir
 
 **Usage:**
 
-```
+```bash
 mv old.txt new.txt
 mv file.txt /path/to/dir/
 ```
@@ -127,7 +127,7 @@ mv file.txt /path/to/dir/
 
 **Usage:**
 
-```
+```bash
 touch file.txt
 ```
 
@@ -139,7 +139,7 @@ touch file.txt
 
 **Usage:**
 
-```
+```bash
 cat file.txt
 ```
 
@@ -151,7 +151,7 @@ cat file.txt
 
 **Usage:**
 
-```
+```bash
 head file.txt
 head -n 20 file.txt
 
@@ -171,7 +171,7 @@ tail -f logfile.log
 
 **Usage:**
 
-```
+```bash
 stat file.txt
 ```
 
@@ -183,7 +183,7 @@ stat file.txt
 
 **Usage:**
 
-```
+```bash
 file file.txt
 ```
 

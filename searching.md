@@ -8,7 +8,7 @@ This chapter covers Linux commands used to search for files, search inside files
 
 **Usage:**
 
-```
+```bash
 find /path -name "file.txt"
 find /path -type f -size +10M
 find . -mtime -1
@@ -27,7 +27,7 @@ find / -perm 644
 
 ### Run a command on matches
 
-```
+```bash
 find . -name "*.log" -exec rm {} \;
 ```
 
@@ -39,7 +39,7 @@ Deletes all `.log` files.
 
 **Usage:**
 
-```
+```bash
 locate file.txt
 locate *.conf
 ```
@@ -48,7 +48,7 @@ locate *.conf
 
 Update database manually:
 
-```
+```bash
 sudo updatedb
 ```
 
@@ -58,7 +58,7 @@ sudo updatedb
 
 **Usage:**
 
-```
+```bash
 grep "hello" file.txt
 grep -i "error" file.txt
 grep -r "keyword" /path
@@ -73,7 +73,7 @@ grep -r "keyword" /path
 
 Example with highlighting:
 
-```
+```bash
 grep --color=auto "pattern" file.txt
 ```
 
@@ -86,7 +86,7 @@ grep --color=auto "pattern" file.txt
 
 Examples:
 
-```
+```bash
 egrep "cat|dog" pets.txt
 fgrep "hello*world" file.txt   # literal text
 ```
@@ -97,7 +97,7 @@ fgrep "hello*world" file.txt   # literal text
 
 **Usage:**
 
-```
+```bash
 awk '{print $1}' file.txt
 awk '/error/ {print $0}' logfile
 awk -F: '{print $1,$3}' /etc/passwd
@@ -117,7 +117,7 @@ Common uses:
 
 **Usage:**
 
-```
+```bash
 sed 's/old/new/' file.txt
 sed -i 's/foo/bar/g' file.txt
 sed -n '1,10p' file.txt
@@ -137,7 +137,7 @@ Common actions:
 
 **Usage:**
 
-```
+```bash
 wc file.txt
 wc -l file.txt   # lines
 wc -w file.txt   # words
@@ -150,7 +150,7 @@ wc -c file.txt   # bytes
 
 **Usage:**
 
-```
+```bash
 sort file.txt
 sort -n numbers.txt
 sort -r file.txt
@@ -169,7 +169,7 @@ sort -u file.txt
 
 **Usage:**
 
-```
+```bash
 uniq file.txt
 uniq -c file.txt  # count duplicates
 uniq -d file.txt  # only duplicates
@@ -177,7 +177,7 @@ uniq -d file.txt  # only duplicates
 
 Tip: Use with sort:
 
-```
+```bash
 sort file.txt | uniq -c
 ```
 
@@ -187,7 +187,7 @@ sort file.txt | uniq -c
 
 **Usage:**
 
-```
+```bash
 cut -d ':' -f 1 /etc/passwd
 cut -c 1-10 file.txt
 ```
@@ -204,7 +204,7 @@ cut -c 1-10 file.txt
 
 **Usage:**
 
-```
+```bash
 ps aux | grep python
 cat logfile | grep error | wc -l
 ```

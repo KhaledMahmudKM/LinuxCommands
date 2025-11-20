@@ -8,7 +8,7 @@ This chapter covers Linux commands to manage users, groups, and their permission
 
 **Usage:**
 
-```
+```bash
 who
 ```
 
@@ -20,7 +20,7 @@ Displays currently logged-in users.
 
 **Usage:**
 
-```
+```bash
 w
 ```
 
@@ -32,7 +32,7 @@ Shows logged-in users, their processes, and system load.
 
 **Usage:**
 
-```
+```bash
 id username
 id
 ```
@@ -45,7 +45,7 @@ Displays UID, GID, and group memberships.
 
 **Usage:**
 
-```
+```bash
 groups username
 groups
 ```
@@ -58,7 +58,7 @@ Lists groups a user belongs to.
 
 **Usage:**
 
-```
+```bash
 whoami
 ```
 
@@ -70,7 +70,7 @@ Displays the username of the current session.
 
 **Usage:**
 
-```
+```bash
 sudo useradd -m username
 sudo useradd -M username  # no home directory
 sudo useradd -s /bin/bash username
@@ -87,7 +87,7 @@ Options:
 
 **Usage:**
 
-```
+```bash
 sudo passwd username
 passwd
 ```
@@ -100,7 +100,7 @@ Prompts for a new password.
 
 **Usage:**
 
-```
+```bash
 sudo usermod -aG group username  # add to group
 sudo usermod -L username          # lock account
 sudo usermod -s /bin/sh username  # change shell
@@ -112,7 +112,7 @@ sudo usermod -s /bin/sh username  # change shell
 
 **Usage:**
 
-```
+```bash
 sudo userdel username
 sudo userdel -r username   # remove home directory
 ```
@@ -123,7 +123,7 @@ sudo userdel -r username   # remove home directory
 
 **Usage:**
 
-```
+```bash
 sudo groupadd groupname
 ```
 
@@ -133,7 +133,7 @@ sudo groupadd groupname
 
 **Usage:**
 
-```
+```bash
 sudo groupdel groupname
 ```
 
@@ -143,7 +143,7 @@ sudo groupdel groupname
 
 **Usage:**
 
-```
+```bash
 gpasswd -a username group   # add user to group
 ```
 
@@ -153,7 +153,7 @@ gpasswd -a username group   # add user to group
 
 **Usage:**
 
-```
+```bash
 chage -l username
 ```
 
@@ -165,7 +165,7 @@ Shows password expiry, minimum/maximum age, warning period.
 
 **Usage:**
 
-```
+```bash
 getent passwd
 getent group
 ```

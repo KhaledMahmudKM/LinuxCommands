@@ -8,7 +8,7 @@ This chapter covers Linux commands used to compress, extract, and manage archive
 
 **Usage:**
 
-```
+```bash
 tar -cvf archive.tar file1 file2
 ```
 
@@ -20,13 +20,13 @@ Create an archive:
 
 Extract an archive:
 
-```
+```bash
 tar -xvf archive.tar
 ```
 
 List contents:
 
-```
+```bash
 tar -tvf archive.tar
 ```
 
@@ -34,25 +34,25 @@ tar -tvf archive.tar
 
 Create gzip-compressed tar:
 
-```
+```bash
 tar -czvf archive.tar.gz folder/
 ```
 
 Extract:
 
-```
+```bash
 tar -xzvf archive.tar.gz
 ```
 
 Create bzip2-compressed tar:
 
-```
+```bash
 tar -cjvf archive.tar.bz2 folder/
 ```
 
 Extract:
 
-```
+```bash
 tar -xjvf archive.tar.bz2
 ```
 
@@ -62,7 +62,7 @@ tar -xjvf archive.tar.bz2
 
 **Usage:**
 
-```
+```bash
 gzip file.txt
 ```
 
@@ -70,7 +70,7 @@ This replaces the file with `file.txt.gz`.
 
 Decompress:
 
-```
+```bash
 gunzip file.txt.gz
 ```
 
@@ -80,13 +80,13 @@ gunzip file.txt.gz
 
 **Usage:**
 
-```
+```bash
 bzip2 file.txt
 ```
 
 Decompress:
 
-```
+```bash
 bunzip2 file.txt.bz2
 ```
 
@@ -96,7 +96,7 @@ bunzip2 file.txt.bz2
 
 **Usage:**
 
-```
+```bash
 zip archive.zip file1 file2
 zip -r archive.zip folder/
 ```
@@ -107,7 +107,7 @@ zip -r archive.zip folder/
 
 **Usage:**
 
-```
+```bash
 unzip archive.zip
 unzip archive.zip -d folder/
 ```
@@ -118,7 +118,7 @@ unzip archive.zip -d folder/
 
 **Usage:**
 
-```
+```bash
 xz file.txt
 ```
 
@@ -126,7 +126,7 @@ Output → `file.txt.xz`
 
 Decompress:
 
-```
+```bash
 unxz file.txt.xz
 ```
 
@@ -136,7 +136,7 @@ unxz file.txt.xz
 
 **Usage:**
 
-```
+```bash
 7z a archive.7z folder/
 7z x archive.7z
 ```
@@ -149,13 +149,13 @@ Supports many formats: 7z, zip, rar, iso, etc.
 
 Compress a folder to tar.gz:
 
-```
+```bash
 tar -cvf - folder/ | gzip > folder.tar.gz
 ```
 
 Extract from tar.gz manually:
 
-```
+```bash
 gzip -dc folder.tar.gz | tar xvf -
 ```
 

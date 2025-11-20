@@ -8,7 +8,7 @@ This chapter covers essential Linux networking commands used for checking connec
 
 **Usage:**
 
-```
+```bash
 ip a          # show interfaces
 ip link       # show link layer info
 ip r          # show route table
@@ -17,7 +17,7 @@ ip neigh      # show ARP table
 
 Common tasks:
 
-```
+```bash
 ip addr add 192.168.1.10/24 dev eth0
 ip link set eth0 up
 ip route add default via 192.168.1.1
@@ -29,7 +29,7 @@ ip route add default via 192.168.1.1
 
 **Usage:**
 
-```
+```bash
 ifconfig
 ifconfig eth0 up
 ```
@@ -42,7 +42,7 @@ ifconfig eth0 up
 
 **Usage:**
 
-```
+```bash
 ping google.com
 ping -c 4 8.8.8.8
 ```
@@ -55,7 +55,7 @@ Tests if a host is reachable.
 
 **Usage:**
 
-```
+```bash
 traceroute google.com
 ```
 
@@ -67,7 +67,7 @@ Shows each hop from your system to the destination.
 
 **Usage:**
 
-```
+```bash
 tracepath google.com
 ```
 
@@ -79,7 +79,7 @@ Does not require root privileges.
 
 **Usage:**
 
-```
+```bash
 netstat -tulnp
 netstat -an
 ```
@@ -100,7 +100,7 @@ netstat -an
 
 **Usage:**
 
-```
+```bash
 ss -tulnp
 ss -s
 ```
@@ -113,14 +113,14 @@ Shows active connections, ports, and statistics.
 
 **Usage:**
 
-```
+```bash
 curl https://example.com
 curl -I https://example.com   # headers only
 ```
 
 Download file:
 
-```
+```bash
 curl -O https://example.com/file.zip
 ```
 
@@ -130,7 +130,7 @@ curl -O https://example.com/file.zip
 
 **Usage:**
 
-```
+```bash
 wget https://example.com/file.iso
 wget -c file.iso   # resume download
 ```
@@ -141,19 +141,19 @@ wget -c file.iso   # resume download
 
 **Usage:**
 
-```
+```bash
 dig google.com
 ```
 
 Query specific DNS record:
 
-```
+```bash
 dig A example.com
 ```
 
 Use specific DNS server:
 
-```
+```bash
 dig @8.8.8.8 example.com
 ```
 
@@ -163,7 +163,7 @@ dig @8.8.8.8 example.com
 
 **Usage:**
 
-```
+```bash
 nslookup example.com
 ```
 
@@ -173,7 +173,7 @@ nslookup example.com
 
 **Usage:**
 
-```
+```bash
 host example.com
 ```
 
@@ -183,7 +183,7 @@ host example.com
 
 **Usage:**
 
-```
+```bash
 nmcli device status
 nmcli connection show
 nmcli device connect eth0
@@ -197,7 +197,7 @@ Manage network settings programmatically.
 
 **Usage:**
 
-```
+```bash
 arp -a
 ```
 
@@ -209,7 +209,7 @@ arp -a
 
 **Usage:**
 
-```
+```bash
 ethtool eth0
 ```
 
@@ -221,13 +221,13 @@ Shows link speed, duplex, driver info.
 
 **Usage:**
 
-```
+```bash
 tcpdump -i eth0
 ```
 
 Capture packets to file:
 
-```
+```bash
 tcpdump -i eth0 -w capture.pcap
 ```
 
@@ -237,7 +237,7 @@ tcpdump -i eth0 -w capture.pcap
 
 **Usage:**
 
-```
+```bash
 nmap 192.168.1.0/24
 nmap -sV target
 ```
@@ -250,7 +250,7 @@ Scans open ports, services, OS fingerprinting.
 
 **Usage:**
 
-```
+```bash
 hostname
 hostname newname
 ```
@@ -261,17 +261,17 @@ hostname newname
 
 **Usage:**
 
-```
+```bash
 whois example.com
 ```
 
 ---
 
-## 20. `ipcalc` — IP Address Calculator
+## 20. `ipcalc` - IP Address Calculator
 
 **Usage:**
 
-```
+```bash
 ipcalc 192.168.1.5/24
 ```
 
