@@ -9,16 +9,16 @@ Each chapter focuses on a specific area, such as file management, user administr
 # Table of Contents
 
 1. [File and Directory Commands](files.md)
-2. [File Permissions & Ownership](permissions.md)
-3. [Searching & Filtering](searching.md)
+2. [File Permissions and Ownership](permissions.md)
+3. [Searching and Filtering](searching.md)
 4. [Process Management](processes.md)
 5. [Networking Commands](networking.md)
-6. [Compression & Archiving](archive.md)
+6. [Compression and Archiving](archive.md)
 7. [Package Management](packages.md)
 8. [System Information](systeminfo.md)
-9. [Disk & Filesystem Commands](disk.md)
-10. [User & Group Management](users.md)
-11. [Editors & Viewing Files](editors.md)
+9. [Disk and Filesystem Commands](disk.md)
+10. [User and Group Management](users.md)
+11. [Editors and Viewing Files](editors.md)
 12. [Error and Logs](error_logs.md)
 
 Each chapter is designed to provide a quick and practical reference to essential Linux commands.
