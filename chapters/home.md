@@ -2,7 +2,8 @@
 
 A practical reference for everyday Linux command-line usage.
 
-<img src="cover_image.jpeg" alt="Cover Image" width="500" >![Cover Image](cover_image.jpeg)
+<img src="cover_image.jpeg" alt="Cover Image" width="500" >
+
 ---
 
 ## Overview
