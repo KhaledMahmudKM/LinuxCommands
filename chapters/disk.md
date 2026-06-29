@@ -161,5 +161,3 @@ tune2fs -c 30 /dev/sda1  # set max mount count
 View or modify filesystem parameters.
 
 ---
-
-## End of Chapter

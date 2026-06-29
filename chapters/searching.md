@@ -212,5 +212,3 @@ cat logfile | grep error | wc -l
 **Description:** Pipes (`|`) pass output of one command into another.
 
 ---
-
-## End of Chapter

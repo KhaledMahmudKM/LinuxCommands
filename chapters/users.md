@@ -174,4 +174,3 @@ View users and groups from system databases.
 
 ---
 
-## End of Chapter

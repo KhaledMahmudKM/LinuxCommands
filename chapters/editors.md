@@ -152,4 +152,3 @@ Extracts readable strings from binaries or files.
 
 ---
 
-## End of Chapter

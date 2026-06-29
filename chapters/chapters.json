@@ -1,0 +1,17 @@
+[
+  { "separator": "— Part I —" },
+  "files.md",
+  "permissions.md",
+  "searching.md",
+  "processes.md",
+  "networking.md",
+  "archive.md",
+  "packages.md",
+  "systeminfo.md",
+  "disk.md",
+  "users.md",
+  "editors.md",
+  "error_logs.md",
+    { "separator": "— Part II —" },
+  "glossary.md"
+]
