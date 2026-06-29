@@ -1,5 +1,8 @@
 # Concise Linux Commands
 
+<img src="cover_image.jpeg" alt="Cover Image" width="500" >![Cover Image](cover_image.jpeg)
+
+
 Linux is a powerful and flexible operating system widely used for servers, development, and networking. Mastering Linux commands allows you to efficiently navigate the system, manage files, monitor processes, and configure network and software components. This book provides a concise reference for commonly used commands, grouped by functionality, to help both beginners and experienced users quickly find the information they need.
 
 Each chapter focuses on a specific area, such as file management, user administration, networking, system monitoring, and package management. Commands are explained with examples for practical use, making this book a handy guide for daily Linux tasks.
@@ -15,5 +18,3 @@ Remember, the Linux command line is a powerful tool, and continuous exploration 
 
 
 
-
-![Cover Image](cover_image.jpeg)
